@@ -32,16 +32,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="pset5.html">Pset 5</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="pset5.html">Pset-5</a>
+              <a class="nav-link js-scroll-trigger" href="about.html" target="_blank">About Me</a>
             </li>
           </ul>
         </div>
@@ -55,7 +49,7 @@
       </div>
     </header>
 
-    <section id="about">
+    <section id="">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -120,7 +114,7 @@
             <p>The structure of tries looks something like this...</p>
 
             <!-- Tries structure -->
-            <script src="https://gist.github.com/minhajul-karim/e5f4649304bf115177ac0f7673534c9a.js"></script>
+            <script async src="https://gist.github.com/minhajul-karim/e5f4649304bf115177ac0f7673534c9a.js"></script>
 
             <p>The basic idea is we’re going to scan the words/strings of the dictionary file and loop around it. If the character is valid, we load it into memory and if it is the last character, we will set <code>isWord = true;</code></p>
 
@@ -130,7 +124,7 @@
 
             <p>The beauty of tries is for every character of a string a new node is created. So, I wrote a separate function called <code>create()</code> for the root node and other child nodes.</p>
 
-            <script src="https://gist.github.com/minhajul-karim/788595bbcca8ed914c75a2a4de61bd71.js"></script>
+            <script async src="https://gist.github.com/minhajul-karim/788595bbcca8ed914c75a2a4de61bd71.js"></script>
 
             <p>A piece of advice I want to share to humanity is, <span id="remember">PLEASE, DO NOT FORGET TO CLOSE YOUR FILE.</span></p>
 
@@ -160,11 +154,11 @@
             <br>
             <p>Here our goal is to free each and every block of memory we’ve allocated dynamically. The idea is very simple. We again start form the root, if any indices of <code>root->alphabet[i] != NULL;</code> we get inside of <code>alphabet[i]</code> and make it the new root. We repeat the above process using recursion until we reach a node where all indices of <code>alphabet[]</code> are 
             <code>NULL</code> which means we’re inside of the last child. Now <code>free</code> this node and <code>return</code> to the immediate parent.</p>
-            <script src="https://gist.github.com/minhajul-karim/2b5e1f0cae4f48b87868c64f04848372.js"></script>
+            <script async src="https://gist.github.com/minhajul-karim/2b5e1f0cae4f48b87868c64f04848372.js"></script>
             <br/>
             <br/>
             <p>Check for any memory leak by executing the following command in bash.</p>
-            <script src="https://gist.github.com/minhajul-karim/14c1b7d1489395bc52e7f61c99ba0206.js"></script>
+            <script async src="https://gist.github.com/minhajul-karim/14c1b7d1489395bc52e7f61c99ba0206.js"></script>
             <br/>
             <br/>
 
@@ -180,8 +174,6 @@
         </div>
       </div>
     </section>
-
-    
     
 
     <!-- Footer -->
@@ -193,14 +185,14 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
 
     <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
+    <!-- <script src="js/scrolling-nav.js"></script> -->
 
   </body>
 
